@@ -1,0 +1,13 @@
+D:\source\repos\FillStorage\bin\Release\AdbBin\adb.exe
+D:\source\repos\FillStorage\bin\Release\AdbBin\AdbWinApi.dll
+D:\source\repos\FillStorage\bin\Release\AdbBin\AdbWinUsbApi.dll
+D:\source\repos\FillStorage\bin\Release\FillStorage.exe.config
+D:\source\repos\FillStorage\bin\Release\FillStorage.exe
+D:\source\repos\FillStorage\bin\Release\FillStorage.pdb
+D:\source\repos\FillStorage\obj\Release\FillStorage.csprojAssemblyReference.cache
+D:\source\repos\FillStorage\obj\Release\FillStorage.MainForm.resources
+D:\source\repos\FillStorage\obj\Release\FillStorage.Properties.Resources.resources
+D:\source\repos\FillStorage\obj\Release\FillStorage.csproj.GenerateResource.cache
+D:\source\repos\FillStorage\obj\Release\FillStorage.csproj.CoreCompileInputs.cache
+D:\source\repos\FillStorage\obj\Release\FillStorage.exe
+D:\source\repos\FillStorage\obj\Release\FillStorage.pdb
