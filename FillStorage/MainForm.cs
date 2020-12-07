@@ -1,4 +1,4 @@
-using FillStorage.HelperClass;
+﻿using FillStorage.HelperClass;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +62,7 @@ namespace FillStorage
             cbbDevices.SelectedIndex = 0;
 
             btnRefresh.Enabled = true;
+            btn_bugreport.Enabled = true;
             btnFill.Enabled = true;
         }
 
@@ -121,6 +122,10 @@ namespace FillStorage
             catch (Exception)
             {
             }
+            if (mAvaliableSize <= (5 * 1024))
+            {
+                btn_bugreport.Enabled = false;
+            }
         }
 
         private string GetSelectedDeviceNo()
@@ -145,7 +150,10 @@ namespace FillStorage
 
         private void MainForm_Bugreport(object sender, MouseEventArgs e)
         {
-            
+            btn_bugreport.Enabled = false;
+            ShowInfo("抓取bugreport中，成功后将保存在桌面...");
+            AdbHelper.CatchBugreport(GetSelectedDeviceNo());
+            ShowInfo("");
         }
     }
 }

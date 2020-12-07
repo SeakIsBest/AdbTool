@@ -1,4 +1,4 @@
-namespace FillStorage
+﻿namespace FillStorage
 {
     partial class MainForm
     {
@@ -163,13 +163,13 @@ namespace FillStorage
             // 
             // btn_bugreport
             // 
+            this.btn_bugreport.Enabled = false;
             this.btn_bugreport.Location = new System.Drawing.Point(386, 225);
             this.btn_bugreport.Name = "btn_bugreport";
             this.btn_bugreport.Size = new System.Drawing.Size(117, 49);
             this.btn_bugreport.TabIndex = 12;
             this.btn_bugreport.Text = "抓取Bugreport";
             this.btn_bugreport.UseVisualStyleBackColor = true;
-            this.btn_bugreport.Visible = false;
             this.btn_bugreport.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_Bugreport);
             // 
             // mPushProgressBar

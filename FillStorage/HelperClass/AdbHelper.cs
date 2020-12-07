@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -93,12 +93,12 @@ namespace FillStorage.HelperClass
             return itemsList.ToArray();
         }
 
-        /// <summary>
-        /// 获取剩余可用空间 Filesystem       1K-blocks      Used Available Use% Mounted on
-        /// </summary>
-        public static void CatchBugreport()
+        public static void CatchBugreport(string deviceNo)
         {
-            ProcessHelper.Run(AdbHelper.AdbExePath,"bugreport");
+            string aaa = string.Format(" -s {0} bugreport {1} ", deviceNo, Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            Console.WriteLine(aaa);
+            ProcessHelper.RunResult re =  ProcessHelper.Run(AdbHelper.AdbExePath,string.Format(" -s {0} bugreport {1} ", deviceNo, Environment.GetFolderPath(Environment.SpecialFolder.Desktop)));
+            Console.WriteLine(re.OutputString);
         }
 
             /// <summary>
